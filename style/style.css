@@ -1,0 +1,212 @@
+* { box-sizing: border-box; }
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 20px;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 100%;
+    max-height: 100px;
+    height: 100%;
+    padding: 0 20px;
+
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8715861344537815) 74%, rgba(255,255,255,0.7315301120448179) 90%, rgba(255,255,255,0) 100%);
+}
+
+.nav {
+    margin: 0 auto;
+}
+
+.nav_list {
+    display: flex;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.nav_item {
+    list-style-type: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.nav_item_text {
+    transition: all 300ms ease-in-out;
+    border-radius: 3px;
+    display: block;
+    width: max-content;
+    float: left;
+    padding: 5px 10px;
+    margin-right: 5px;
+    color: #f0ffff;
+    background: #54c0f3;
+    text-transform: lowercase;
+}
+
+.form_sorting {
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto 10px;
+}
+
+.input_wrapper {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.input_search {
+    width: 100%;
+    height: 100%;
+
+    font-size: 18px;
+}
+
+.btn_clear {
+    height: 30px;
+    margin-left: auto;
+    box-sizing: border-box;
+    outline: 0;
+    cursor: pointer;
+    padding: 5px 10px 4px;
+    background: red;
+    color: white;
+    border-radius: 5px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 12px;
+    transition: all 300ms ease-in-out;
+    border: 1px solid transparent;
+}
+
+.btn_clear:hover {
+    transition: all 300ms ease-in-out;
+    background: white;
+    color: red;
+    border: 1px solid red;
+
+}
+
+/* object list */
+.object_list {
+    padding-left: 10px;
+    margin-top: 90px;
+    list-style-type: none;
+}
+
+.object_item {
+    position: relative;
+
+    font-family: Roboto, Arial, sans-serif;
+
+
+    margin-left: 10px;
+
+    color: rgb(15, 28, 49);
+}
+
+.code {
+    font-size: 16px;
+    color: red;
+    margin-right: 10px;
+}
+
+.num_key {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.address {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 10px;
+    color: #3a21bc;
+}
+
+.descriptions {
+    font-size: 18px;
+}
+
+.color {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-top: 4px;
+    margin-bottom: -2px;
+    background: #ffffff;
+}
+
+.black_br_mod { background: #43381e;} /* чорний (бронза) // black_br */
+.dark_mod { background: #43381e;} /* чорний (бронза) // black_br */
+
+.green_mod { background: #008000;}         /* зелений // green */
+.green_sal_mod { background: #00ff00;}   /* салатовий // green_sal */
+.light_green_mod { background: #00ff00;}   /* салатовий // green_sal */
+
+.white_mod { border: 1px solid #aaaaaa;}           /* білий // white */
+.white1_mod { background: #e2e2e2; border: 3px solid #000000; padding: 5px;} /* чорно білий // vtorsyrovyna */
+
+.red_mod { background: #ff0000;}          /* червоний // red */
+
+.yellow_mod { background: #ffff00;}         /* жовтий // yellow */
+
+.blue_mod { background: #0000ff;}            /* синій // blue */
+.blue1_mod { background: #020286;}   /* синій РАЯ // blue_raya */
+
+.black_mod { background: #000000;}         /* чорний // black */
+
+.violet_mod { background: #890089;}     /* фіолетовий // violet */
+
+.default_mod { background: seashell; border: 2px solid #b3f5f0
+}
+
+#go-top {
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+
+    display: none;
+    width: 60px;
+    height: 72px;
+
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: all 300ms ease-in-out;
+    background: url("./up_arrow.png") center center no-repeat;
+    background-size: contain;
+    transform: translate(50%);
+}
+/**
+ * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ */
+@media screen and (max-width: 700px) {
+    img { width: 100%;}
+}
+@media screen and (max-width: 900px) {
+    #go-top { right: 25px;}
+    #header_section { align-items: center; padding-left: 0;}
+}
