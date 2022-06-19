@@ -1,14 +1,14 @@
 ## Description
 
 #### Src
-1. main.js - файл генерує html файл з данними
-2. const.js - дані які незмінні, наприклад html head, startBody, footer ...
-3. data_files/
+1. src/main.js - файл генерує html файл з данними
+2. src/const.js - дані які незмінні, наприклад html head, startBody, footer ...
+3. src/data_files/
     1. key_data.tsv - дані таблиці з розділами табуляції 
         (створено в google.xlsx таблиці та скачано як формат *.tsv,
         Файл -> Скачать -> Формат TSV (.tsv))
     2. key_data.txt - (ще одна копія) дані таблиці з розділами табуляції
-4. aliance_v*.zip - старі версії в архівах
+4. versions/aliance_v*.zip - версії в архівах
 
 #### Build
 1. index.html - готовий робочий файл для пошуку
