@@ -3,8 +3,9 @@
 const { head, startBody, scripts, endBody } = require('./const');
 const fs = require('fs/promises');
 
+const urlGoogleTabDataKey = 'https://docs.google.com/spreadsheets/d/1X5Qa8wG7eFJ4PXrVpPNqDYqAm1GlQ4sD/edit#gid=352767914';
 const srcFileName = './data_files/key_data.tsv';
-const distFileName = './index.html';
+const distFileName = '../index.html';
 
 const parseFile = data => {
     return data.split('\n').map(row => {
