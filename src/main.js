@@ -5,7 +5,7 @@ const fs = require('fs/promises');
 
 const urlGoogleTabDataKey = 'https://docs.google.com/spreadsheets/d/1X5Qa8wG7eFJ4PXrVpPNqDYqAm1GlQ4sD/edit#gid=352767914';
 const gitRepository = 'https://github.com/alextheme/aliance1k';
-const srcFileName = './data_files/key_data.tsv';
+const srcFileNameDB = './data_files/key_data.tsv';
 const distFileName = '../index.html';
 
 const parseFile = data => {
@@ -16,7 +16,7 @@ const parseFile = data => {
     });
 }
 
-const createHtmlFile = dataArray => {
+const getContentHtml = dataArray => {
     const s = (className, text) => `<span class="${className}">${text}</span>`;
     const sColor = color => `<span class="color ${color ? `${color}_mod` : ''}"></span>`;
 
@@ -39,17 +39,17 @@ const createHtmlFile = dataArray => {
     return `${head}${startBody}${list}${scripts}${endBody}`;
 }
 
-async function example() {
+async function createHtmlFile() {
     try {
-        const data = await fs.readFile(srcFileName, 'utf8');
+        const data = await fs.readFile(srcFileNameDB, 'utf8');
         const arrayStrings = parseFile(data);
-        const content = createHtmlFile(arrayStrings);
+        const content = getContentHtml(arrayStrings);
         await fs.writeFile(distFileName, content);
     } catch (err) {
         console.log(err);
     }
 }
-example();
+createHtmlFile();
 
 
 
