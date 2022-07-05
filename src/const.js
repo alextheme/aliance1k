@@ -27,7 +27,7 @@ exports.head = `
 
 exports.startBody = `
 <body>
-  <section class="header">
+  <header class="header">
     <nav class="nav">
       <ul class="nav_list">
         <li class="nav_item"><span class="nav_item_text">Ключи и Коды</span></li>
@@ -39,7 +39,7 @@ exports.startBody = `
       </label>
       <button class="btn_clear">Clear</button>
     </form>
-  </section>
+  </header>
 
   <ol class="object_list js-list">
 `;
