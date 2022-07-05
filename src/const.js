@@ -6,7 +6,6 @@ const openGraph = `
   <meta property="og:title" content="Key & Code"/>
   <meta property="og:description" content="List of key numbers and codes in the box"/>
   <meta property="og:image" content="style/keys_codes.png"/>
-  <meta property="og:image" content="style/keys_codes.png"/>
   <meta property="vk:image" content="style/keys_codes.png"/>
   <meta property="fb:image" content="style/keys_codes.png"/>
   <meta property="twitter:image" content="style/keys_codes.png"/>

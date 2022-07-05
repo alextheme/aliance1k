@@ -1,6 +1,6 @@
 ### [page](https://alextheme.github.io/aliance1k/)
-## Description
 
+## Description
 #### Src
 1. src/main.js - файл генерує html файл з данними
 2. src/const.js - дані які незмінні, наприклад html head, startBody, footer ...
