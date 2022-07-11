@@ -39,7 +39,9 @@ jQuery(function() {
     /** Form Search, Input min 2 liters. Search automatic. */
     inputSearch.on('input', function( event ) {
         let { value } = event.target;
-        searchElementInLists( value );
+        if (value.length > 1) {
+            searchElementInLists( value );
+        }
 
         if ( value.length === 0 ) {
             list.html(items); // При удалении последнего символа, показывать весь список
