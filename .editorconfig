@@ -1,0 +1,29 @@
+# Корневой файл EditorConfig
+root = true
+
+# Для всех файлов
+[*]
+charset = utf-8
+indent_style = tab
+indent_size = 4
+
+# Если нужно - отдельные настройки можно переписать для конретного типа файлов
+[*.jade]
+indent_style = space
+indent_size = 2
+
+[*.scss]
+indent_style = tab
+indent_size = 8
+
+[*.css]
+indent_style = tab
+indent_size = 8
+
+[*.html]
+indent_style = tab
+indent_size = 8
+
+[*.js]
+indent_style = tab
+indent_size = 8

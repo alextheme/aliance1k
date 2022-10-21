@@ -1,6 +1,6 @@
 // event handlers // обработчики событий
 // event listeners // прослушиватели событий
-const { head, startBody, scripts, endBody } = require('./const');
+const { head, startBody, endList, scripts, endBody } = require('./const');
 const fs = require('fs/promises');
 
 const urlGoogleTabDataKey = 'https://docs.google.com/spreadsheets/d/1X5Qa8wG7eFJ4PXrVpPNqDYqAm1GlQ4sD/edit#gid=352767914';
@@ -36,7 +36,7 @@ const getContentHtml = dataArray => {
             .replace(/\t\t\t<li/g, '\t\t<li');
     });
 
-    return `${head}${startBody}${list}${scripts}${endBody}`;
+    return `${head}${startBody}${list}${endList}${scripts}${endBody}`;
 }
 
 async function createHtmlFile() {

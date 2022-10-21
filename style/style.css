@@ -27,6 +27,10 @@ body {
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8715861344537815) 74%, rgba(255,255,255,0.7315301120448179) 90%, rgba(255,255,255,0) 100%);
 }
 
+.body--hide_menu_mod .header {
+	margin-top: -95px;
+}
+
 .nav {
     margin: 0 auto;
 }
@@ -199,6 +203,10 @@ body {
     background: url("./up_arrow.png") center center no-repeat;
     background-size: contain;
     transform: translate(50%);
+}
+
+.body--scroll_mod #go-top {
+	display: block;
 }
 /**
  * \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\

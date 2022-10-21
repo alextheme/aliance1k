@@ -44,10 +44,10 @@ exports.startBody = `
   <ol class="object_list js-list">
 `;
 
-exports.scripts = `
-  <script src="style/jQuery.min.js"></script>
-  <script src="style/button.js"></script>
-  <script src="style/search.js"></script>
-`;
+exports.endList = `</ol>`;
 
-exports.endBody = `</ol></body></html>`;
+exports.button = `<a href="#" id="go-top" title="Вверх"></a>`;
+
+exports.scripts = `<script src="style/search.js"></script>`;
+
+exports.endBody = `</body></html>`;
